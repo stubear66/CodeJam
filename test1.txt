@@ -1,0 +1,10 @@
+In init fairs with n = 100020000
+20000
+Found fair and square: 10001
+Found fair and square: 10101
+Found fair and square: 10201
+Found fair and square: 11011
+Found fair and square: 11111
+Found fair and square: 11211
+Found fair and square: 20002
+Found fair and square: 20102

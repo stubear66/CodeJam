@@ -1,0 +1,10 @@
+Case #1: X won
+Case #2: Draw
+Case #3: X won
+Case #4: Draw
+Case #5: O won
+Case #6: O won
+Case #7: Draw
+Case #8: O won
+Case #9: X won
+Case #10: O won
