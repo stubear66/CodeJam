@@ -13,8 +13,8 @@ def isFair2(s):
 def isSquare(n, listFairs):
     #print "In isSquare"
     for i in listFairs:
-        #print i
-        if i[1] == n:
+        #print n,i
+        if n[0] == i[1]:
             return i[0]
     return 0
 
@@ -26,15 +26,15 @@ def initFairs(n):
     """ initialize an array of fairs up to our end point """
     print "In init fairs with n = " + str(n)
     fairList = []
-    for i in range(1, n+1):
+    for i in xrange(1, n+1):
         if isFair(str(i)): 
             fairList.append((i, i*i))
     return fairList
 
         
-f = open("C-small-attempt0.in.txt", "r")
+#f = open("C-small-attempt0.in.txt", "r")
 #f = open("C-large-1.in.txt", "r")
-#f = open("test_large.txt", "r")
+f = open("test_large.txt", "r")
 numTest=f.readline()
 #print numTest
 case = 1
@@ -53,7 +53,7 @@ for line in f:
        #fairs.append(z)
        root = isSquare(z, fairs)
        if root != 0:
-          print "Found fair and square: " + str(root)
+          #print "Found fair and square: " + str(root)
           fairAndSquareCount += 1
     #   z += 1
     print "Case #" + str(case) + ": " + str(fairAndSquareCount)
